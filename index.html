@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BoardGame Scorer</title>
+<meta name="description" content="Une calculatrice de points à plusieurs : chacun note ses points, l'application tient les totaux.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --fond: #f7f8fa;
+    --carte: #ffffff;
+    --encre: #15181d;
+    --encre-douce: #525a67;
+    --trait: rgba(21, 24, 29, 0.1);
+    --accent: #1c5cab;
+    --marque: #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fond: #121417;
+      --carte: #1a1d21;
+      --encre: #f2f3f5;
+      --encre-douce: #a8b0bb;
+      --trait: rgba(255, 255, 255, 0.12);
+      --accent: #7fb0ec;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px 72px;
+    background: var(--fond);
+    color: var(--encre);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  main { max-width: 36rem; margin: 0 auto; }
+  .entete { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+  .icone {
+    width: 76px; height: 76px; flex-shrink: 0;
+    border-radius: 18px; background: var(--marque);
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0; letter-spacing: -0.4px; }
+  .accroche { color: var(--encre-douce); margin: 4px 0 0; }
+  h2 { font-size: 1.15rem; margin: 36px 0 10px; letter-spacing: -0.2px; }
+  p, ul { margin: 0 0 16px; }
+  ul { padding-left: 1.3em; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 44px;
+    padding-top: 20px;
+    border-top: 1px solid var(--trait);
+    color: var(--encre-douce);
+    font-size: 0.92rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="entete">
+    <div class="icone">
+      <svg viewBox="0 0 108 108" width="100%" height="100%" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round">
+          <path d="M34 37.5V70.5" />
+          <path d="M47.3 37.5V70.5" />
+          <path d="M60.7 37.5V70.5" />
+          <path d="M74 37.5V70.5" />
+          <path d="M30.5 67L77.5 41" />
+        </g>
+      </svg>
+    </div>
+    <div>
+      <h1>BoardGame Scorer</h1>
+      <p class="accroche">Une calculatrice de points à plusieurs.</p>
+    </div>
+  </div>
+
+  <p>À chaque manche, chacun note ses points&nbsp;; l'application tient les
+  totaux, l'historique et les corrections. Elle sert à n'importe quel jeu, parce
+  qu'elle ne connaît aucun jeu.</p>
+
+  <h2>Ce qu'elle fait</h2>
+  <ul>
+    <li>une partie, des joueurs, des points par manche — positifs ou négatifs ;</li>
+    <li>le total de chaque joueur, toujours à jour, et un graphique de progression ;</li>
+    <li>la correction d'une manche passée, et l'annulation de la dernière action ;</li>
+    <li>la reprise d'une partie des semaines plus tard ;</li>
+    <li>l'export d'une partie au format CSV.</li>
+  </ul>
+
+  <h2>Vos données restent chez vous</h2>
+  <p>Aucune donnée collectée, aucun compte, aucune publicité, et pas même
+  l'accès à Internet.
+  <a href="./confidentialite.html">Lire la politique de confidentialité</a>.</p>
+
+  <footer>
+    <p>Édité par Yoann Dexmier ·
+    <a href="mailto:yoanndexmier.pro@gmail.com">yoanndexmier.pro@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>

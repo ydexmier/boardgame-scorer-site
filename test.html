@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tester BoardGame Scorer</title>
+<meta name="description" content="Rejoindre le test de BoardGame Scorer : deux étapes, Android, quatorze jours.">
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    color-scheme: light dark;
+    --fond: #f7f8fa;
+    --carte: #ffffff;
+    --encre: #15181d;
+    --encre-douce: #525a67;
+    --trait: rgba(21, 24, 29, 0.1);
+    --accent: #1c5cab;
+    --marque: #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fond: #121417;
+      --carte: #1a1d21;
+      --encre: #f2f3f5;
+      --encre-douce: #a8b0bb;
+      --trait: rgba(255, 255, 255, 0.12);
+      --accent: #7fb0ec;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 16px 72px;
+    background: var(--fond);
+    color: var(--encre);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  main { max-width: 36rem; margin: 0 auto; }
+  .entete { display: flex; align-items: center; gap: 18px; margin-bottom: 24px; }
+  .icone {
+    width: 76px; height: 76px; flex-shrink: 0;
+    border-radius: 18px; background: var(--marque);
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0; letter-spacing: -0.4px; }
+  .accroche { color: var(--encre-douce); margin: 4px 0 0; }
+  h2 { font-size: 1.15rem; margin: 36px 0 10px; letter-spacing: -0.2px; }
+  p, ul { margin: 0 0 16px; }
+  ul { padding-left: 1.3em; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+
+  .etape {
+    background: var(--carte);
+    border: 1px solid var(--trait);
+    border-radius: 14px;
+    padding: 20px 20px 24px;
+    margin-bottom: 14px;
+  }
+  .rang {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--encre-douce);
+    margin-bottom: 6px;
+  }
+  .etape h2 { margin: 0 0 8px; font-size: 1.2rem; }
+  .etape p { margin: 0 0 16px; }
+  .etape p:last-child { margin-bottom: 0; }
+  .bouton {
+    display: block;
+    text-align: center;
+    background: var(--marque);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 20px;
+    border-radius: 999px;
+  }
+  .avertissement {
+    background: var(--carte);
+    border: 1px solid var(--trait);
+    border-left: 4px solid var(--marque);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 28px 0;
+  }
+  .avertissement p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 44px;
+    padding-top: 20px;
+    border-top: 1px solid var(--trait);
+    color: var(--encre-douce);
+    font-size: 0.92rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="entete">
+    <div class="icone">
+      <svg viewBox="0 0 108 108" width="100%" height="100%" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round">
+          <path d="M34 37.5V70.5" />
+          <path d="M47.3 37.5V70.5" />
+          <path d="M60.7 37.5V70.5" />
+          <path d="M74 37.5V70.5" />
+          <path d="M30.5 67L77.5 41" />
+        </g>
+      </svg>
+    </div>
+    <div>
+      <h1>Tester l'application</h1>
+      <p class="accroche">BoardGame Scorer · Android</p>
+    </div>
+  </div>
+
+  <p>Une feuille de score pour jeux de société&nbsp;: chacun annonce ses points,
+  vous les tapez, l'application tient les totaux et l'historique. Elle ne connaît
+  aucun jeu et ne désigne aucun vainqueur — c'est un outil de saisie, pas un
+  arbitre. Gratuite, sans publicité, sans compte, et sans accès à Internet.</p>
+
+  <div class="avertissement">
+    <p><strong>Avant de commencer, la seule chose qui compte&nbsp;:</strong>
+    Google exige douze testeurs inscrits <strong>sans interruption pendant
+    quatorze jours</strong>. Si une personne désinstalle en cours de route, le
+    compteur repart de zéro pour tout le monde.</p>
+    <p>Ne vous inscrivez donc que si vous pouvez la garder installée deux
+    semaines. Mieux vaut un non ce soir qu'un départ au jour huit.</p>
+  </div>
+
+  <div class="etape">
+    <span class="rang">Étape 1</span>
+    <h2>Rejoindre le groupe</h2>
+    <p>C'est ce qui vous donne accès au test. Il faut être connecté au
+    <strong>compte Google de votre téléphone Android</strong> — c'est à peu près
+    la seule chose qui cloche quand ça ne marche pas.</p>
+    <a class="bouton" href="https://groups.google.com/g/boardgame-scorer-testeurs">Rejoindre le groupe</a>
+  </div>
+
+  <div class="etape">
+    <span class="rang">Étape 2</span>
+    <h2>S'inscrire au test</h2>
+    <p>La page doit afficher «&nbsp;Vous êtes maintenant un testeur&nbsp;» avant
+    que le téléchargement serve à quelque chose.</p>
+    <a class="bouton" href="https://play.google.com/apps/testing/com.boardgamescorer">Ouvrir le test</a>
+  </div>
+
+  <div class="etape">
+    <span class="rang">Étape 3</span>
+    <h2>Installer</h2>
+    <p>Depuis le lien «&nbsp;Télécharger sur Google&nbsp;Play&nbsp;» de l'étape
+    précédente.</p>
+    <p><strong>Si l'application n'apparaît pas tout de suite, c'est normal</strong>
+    — la mise à disposition prend parfois une heure ou deux. Réessayez plus tard
+    dans la soirée, il n'y a rien à refaire.</p>
+  </div>
+
+  <h2>Ce que je vous demande ensuite</h2>
+  <p>Servez-vous-en <strong>pour de vrai</strong>, au moins une partie, à la
+  vraie table et sans papier de secours à côté. C'est le seul test qui compte.</p>
+  <p>Puis écrivez-moi ce qui vous a ralenti ou agacé, même si c'est minuscule.
+  Surtout si c'est minuscule, en fait&nbsp;: les gros problèmes, je finirai par
+  les trouver seul&nbsp;; une hésitation d'une demi-seconde répétée vingt fois
+  dans la soirée, non.</p>
+  <p><a href="mailto:yoanndexmier.pro@gmail.com?subject=BoardGame%20Scorer%20—%20retour%20de%20test">yoanndexmier.pro@gmail.com</a></p>
+
+  <h2>Vos données</h2>
+  <p>L'application n'a aucune permission réseau&nbsp;: vos parties restent sur
+  votre téléphone. Votre adresse ne me sert qu'à vous donner accès au test, et le
+  groupe sera supprimé quand il sera terminé.
+  <a href="./confidentialite.html">Politique de confidentialité</a>.</p>
+
+  <footer>
+    <p>Édité par Yoann Dexmier ·
+    <a href="mailto:yoanndexmier.pro@gmail.com">yoanndexmier.pro@gmail.com</a> ·
+    <a href="./index.html">À propos de l'application</a></p>
+  </footer>
+</main>
+</body>
+</html>
